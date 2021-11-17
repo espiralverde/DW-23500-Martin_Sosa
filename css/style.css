@@ -1,0 +1,88 @@
+.bg-img {
+  background-image: url("./../img/barra.jpg");
+  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.contenedor {
+  position: absolute;
+  margin: 10px 0px 0px 0px;
+  width: auto;
+}
+
+.topNav {
+  background-color: black;
+  margin: 0px;
+}
+
+.topNav ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+.topNav ul li {
+  display: inline;
+  padding: 50px;
+}
+
+.topNav ul li a:link {
+  font-size: 25px;
+  text-decoration: none;
+  color: whitesmoke;
+  border-bottom: none;
+  font-weight: bold;
+}
+
+.topNav ul li a:visited {
+  text-decoration: none;
+  color: whitesmoke;
+  border-bottom: none;
+  font-weight: bold;
+}
+
+form {
+  display: table;
+  padding: 10px;
+  border: thin dotted #7e7e7e;
+  background-color: #e1ceb8;
+  text-align: left;
+}
+form textarea {
+  width: 500px;
+  height: 200px;
+}
+h3 {
+  color: blue;
+}
+
+footer {
+  margin: 0px;
+}
+
+footer p {
+  font-family: sans-serif;
+  text-align: left;
+}
+
+footer a {
+  margin: 10px 10px 10px 50px;
+  padding-right: 50px;
+}
+
+.mapa iframe {
+  display: block;
+  margin-top: 20px;
+  width: 50px;
+  height: 50px;
+  border-style: solid black;
+}
+
+.logos img {
+  display: inline;
+  height: 50px;
+  width: 50px;
+}
