@@ -1,88 +1,176 @@
-.bg-img {
-  background-image: url("./../img/barra.jpg");
-  min-height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+html {
+  font-size: 62.5%;
 }
-
-.contenedor {
-  position: absolute;
-  margin: 10px 0px 0px 0px;
-  width: auto;
-}
-
-.topNav {
-  background-color: black;
-  margin: 0px;
-}
-
-.topNav ul {
+body {
   margin: 0px;
   padding: 0px;
-  list-style-type: none;
+  font-family: sans-serif;
 }
+.menuNavegacion {
+  display: flex;
+  justify-content: space-between;
 
-.topNav ul li {
-  display: inline;
-  padding: 50px;
-}
-
-.topNav ul li a:link {
-  font-size: 25px;
-  text-decoration: none;
-  color: whitesmoke;
-  border-bottom: none;
-  font-weight: bold;
-}
-
-.topNav ul li a:visited {
-  text-decoration: none;
-  color: whitesmoke;
-  border-bottom: none;
-  font-weight: bold;
-}
-
-form {
-  display: table;
+  align-items: center;
+  background-color: black;
   padding: 10px;
-  border: thin dotted #7e7e7e;
-  background-color: #e1ceb8;
-  text-align: left;
 }
-form textarea {
-  width: 500px;
-  height: 200px;
+.menuLista {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  padding: 5px;
 }
-h3 {
-  color: blue;
+.menuLista a {
+  text-decoration: none;
+  color: antiquewhite;
+  font-family: "Fredericka the Great", cursive;
+  font-size: 2rem;
+}
+.hero {
+  background-image: url(/resources/img/tablas.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero h1 {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 5rem;
+  background: rgba(40, 42, 44, 0.7);
+  -webkit-text-fill-color: antiquewhite;
+  padding: 4rem 4rem;
+  display: flex;
+  justify-content: center;
 }
 
-footer {
+/* NOSOTROS */
+/* Cards */
+.cardColumn {
+  font-family: "Fredericka the Great", cursive;
+  background-color: rgb(40, 42, 44);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 30px;
+}
+.cardColumn h2 {
+  color: antiquewhite;
+  font-size: 5rem;
+  padding: 10px 0px;
+}
+.card_img {
+  width: 300px;
+  height: 300px;
+}
+.card_content {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  justify-content: space-around;
+  height: 200px;
+  width: 100%;
+}
+
+.cardColumn h3 {
+  color: antiquewhite;
+  font-size: 3rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.cardColumn p {
+  color: antiquewhite;
+  font-size: 2rem;
+}
+.card {
+  display: flex;
+  margin: 10px;
+  width: 60%;
+  justify-content: space-around;
+  align-items: center;
+}
+.card img {
+  border-radius: 25px;
+}
+
+/* CONTACTO */
+
+.contacto {
+  font-family: "Fredericka the Great", cursive;
+  background-color: #282a2c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100vh;
+}
+
+.contacto h3 {
+  color: antiquewhite;
+  font-size: 5rem;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.formContenedor {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 30px;
+  width: 50vh;
+}
+.formContenedor form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-family: "Fredericka the Great", cursive;
+  color: antiquewhite;
+  font-size: 3rem;
+}
+form input {
+  background-color: grey;
+  border: solid 1px black;
+}
+.botonForm {
+  padding: 1rem 1rem;
+  background: #282a2c;
+  cursor: pointer;
+  transition: background 0.5s ease-in-out;
+}
+
+/* MENU */
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: blue;
+}
+.logos img {
+  display: inline;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
 }
 
 footer p {
-  font-family: sans-serif;
-  text-align: left;
-}
-
-footer a {
-  margin: 10px 10px 10px 50px;
+  color: antiquewhite;
+  display: flex;
+  align-items: center;
+  align-self: center;
   padding-right: 50px;
-}
-
-.mapa iframe {
-  display: block;
-  margin-top: 20px;
-  width: 50px;
-  height: 50px;
-  border-style: solid black;
-}
-
-.logos img {
-  display: inline;
-  height: 50px;
-  width: 50px;
+  font-family: "Fredericka the Great", cursive;
+  font-size: 1.5rem;
 }
