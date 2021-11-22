@@ -5,6 +5,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: sans-serif;
+<<<<<<< HEAD
 }
 
 .menuNavegacion {
@@ -145,6 +146,141 @@ body {
   color: antiquewhite;
   font-size: 3rem;
 }
+=======
+}
+.menuNavegacion {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  background-color: black;
+  padding: 10px;
+}
+.menuLista {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  padding: 5px;
+}
+.menuLista a {
+  text-decoration: none;
+  color: antiquewhite;
+  font-family: "Fredericka the Great", cursive;
+  font-size: 2rem;
+}
+.hero {
+  background-image: url(/resources/img/tablas.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero h1 {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 5rem;
+  background: rgba(40, 42, 44, 0.7);
+  -webkit-text-fill-color: antiquewhite;
+  padding: 4rem 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* NOSOTROS */
+/* Cards */
+.cardColumn {
+  font-family: "Fredericka the Great", cursive;
+  background-color: rgb(40, 42, 44);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 30px;
+}
+.cardColumn h2 {
+  color: antiquewhite;
+  font-size: 5rem;
+  padding: 10px 0px;
+}
+.card_img {
+  width: 300px;
+  height: 300px;
+}
+.card_content {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  justify-content: space-around;
+  height: 200px;
+  width: 100%;
+}
+
+.cardColumn h3 {
+  color: antiquewhite;
+  font-size: 3rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.cardColumn p {
+  color: antiquewhite;
+  font-size: 2rem;
+}
+.card {
+  display: flex;
+  margin: 10px;
+  width: 60%;
+  justify-content: space-around;
+  align-items: center;
+}
+.card img {
+  border-radius: 25px;
+}
+
+/* CONTACTO */
+
+.contacto {
+  font-family: "Fredericka the Great", cursive;
+  background-color: #282a2c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100vh;
+}
+
+.contacto h3 {
+  color: antiquewhite;
+  font-size: 5rem;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.formContenedor {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 30px;
+  width: 50vh;
+}
+.formContenedor form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-family: "Fredericka the Great", cursive;
+  color: antiquewhite;
+  font-size: 3rem;
+}
+>>>>>>> main
 form input {
   background-color: grey;
   border: solid 1px black;
