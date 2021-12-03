@@ -1,115 +1,121 @@
 * {
-  box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
   font-family: "Fredericka the Great", cursive, sans-serif;
 }
 html {
   font-size: 62.5%;
 }
 
-header {
-  background-color: transparent;
+/* MAIN */
+
+.headerNav {
   /* position: fixed; */
   width: 100%;
 }
-a {
-  text-decoration: none;
-}
-header nav {
-  background-color: black;
+.headerNav ul {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
+  background-color: black;
   align-items: center;
 }
-header nav a {
-  font-size: 4rem;
-  font-weight: bold;
+.headerNav ul li a {
+  text-decoration: none;
+  font-size: 3rem;
   color: antiquewhite;
-  padding: 5px 5px;
-  border-bottom: 5px solid transparent;
 }
-header nav img {
+.headerNav img {
   height: 50px;
   padding-top: 10px;
 }
-header nav a:hover {
+.headerNav a:hover {
   border-bottom-color: red;
   color: red;
 }
-
-header nav a .selected {
-  border-bottom-color: red;
-  transform: border 0.9s ease;
-}
-
-main {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .hero {
   background-image: url(./../resources/img/tablas.jpg);
-  /* background-image: url(/resources/img/tablas.jpg); */
   width: 100%;
   height: 100vh;
-  flex-wrap: wrap;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-.hero h1 {
-  font-family: "Fredericka the Great", cursive;
-  font-size: 5rem;
-  background: rgba(40, 42, 44, 0.7);
-  -webkit-text-fill-color: antiquewhite;
-  padding: 4rem;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .heroTitulo {
-  margin: 200px 300px;
-  justify-content: center;
+  font-size: 8rem;
+  background: rgba(40, 42, 44, 0.5);
+  -webkit-text-fill-color: antiquewhite;
+  padding: 4rem;
+}
+.heroTitulo:hover {
+  transform: scale(1.03);
+  background: rgba(40, 42, 44, 0.8);
 }
 
 /* LA TIENDA */
-
-.contenedor_latienda {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  background-color: #282a2c;
+.section_latienda {
 }
-.card_latienda {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: #282a2c;
-  height: 100vh;
+.gridContenedor_latienda {
+  display: grid;
+  background-color: rgb(40, 42, 44);
+
+  grid-template-areas:
+    "picada picada deli"
+    "picada picada deli"
+    "picada picada empresarial"
+    "picada picada empresarial";
+  gap: 20px;
   padding: 20px;
 }
-.card_latienda_contenido {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.h2_latienda {
+  background: rgba(40, 42, 44, 0.7);
+  -webkit-text-fill-color: antiquewhite;
+  text-align: center;
+  margin: 30px 0px;
+  font-size: 5rem;
+  padding: 4rem;
 }
-.card_latienda img {
-  margin-top: 10px;
+.Picadas_latienda {
+  grid-area: picada;
+  background-image: url(./../resources/img/Tienda_img/picada.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
   border-radius: 5px;
-  height: 350px;
 }
-
-/* .card_latienda_contenido p {
-  justify-content: center;
-  font-size: 2rem;
-  font-family: sans-serif;
-  color: antiquewhite;
-} */
+.Picadas_latienda:hover {
+  filter: opacity(0.9);
+  transform: scale(1.02);
+}
+.Deli_latienda {
+  grid-area: deli;
+  background-image: url(./../resources/img/Tienda_img/deli_1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+.Deli_latienda:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04);
+}
+.Empresarial_latienda {
+  grid-area: empresarial;
+  background-image: url(./../resources/img/Tienda_img/empresarial.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+.Empresarial_latienda:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04);
+}
 
 /*CONTACTO*/
 
@@ -269,7 +275,6 @@ section {
   padding: 10px 20px;
   border-radius: 5px;
 }
-/* FOOTER */
 /* FOOTER */
 footer {
   background-color: black;
