@@ -4,63 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="./../css/style.css">
+    <link type="text/css" rel="stylesheet" href="./../css/css_styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"> 
     <title>General Bar & Beer</title>
 </head>
 
 <body>
     
     <header>
-        <nav>
-            
-            <a class="selected" href="./menu.html">Menú</a>
-            <a href="./latienda.html">La Tienda</a>
-            <a href="./../index.html"> <img src="./../resources/img/Logo Negro_chico.jpeg" alt="" ></a>
-            <a href="./nosotros.html">Nosotros</a>
-            <a href="./contacto.html">Contacto</a>
+        <nav class="headerNav">
+            <ul>
+                <li><a class="selected" href="./menu.html">Menú</a></li>
+                <li><a href="./latienda.html">La Tienda</a></li>
+                <li><a href="./../index.html"> <img src="./../resources/img/Logo Negro_chico.jpeg" alt="" ></a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        
-        <div class="contenedor_latienda">
-            <!-- Card 1 -->
-            <div class="card_latienda">
-                <img src="./../resources/img/Tienda_img/picada.png" alt="">
-                    <div class="card_latienda_contenido">
-                <!-- <p>Picadas</p> -->
-                    </div>
+        <section class="section_latienda">
+            <div class="gridContenedor_latienda">
+                <div class="Picadas_latienda">
+                    <h2 class="h2_latienda">Picadas</h2>
+                </div>
+                
+                <div class="Deli_latienda">
+                    <h2 class="h2_latienda">Deli</h2>
+                </div>
+                
+                <div class="Empresarial_latienda">
+                    <h2 class="h2_latienda">Empresarial</h2>
+                </div>
             </div>
-            <!-- Card 2 -->
-            <div class="card_latienda">
-                <img src="./../resources/img/Tienda_img/deli_1.png" alt="">
-                    <div class="card_latienda_contenido">
-                    <!-- <p>Deli Store</p> -->
-                    </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="card_latienda">
-                <img src="./../resources/img/Tienda_img/empresarial.png" alt="">
-                    <div class="card_latienda_contenido">
-                    <!-- <p>empresarial</p> -->
-                    </div>
-            </div>
+    </section>
 
-        </div>
-
-    
     </main>
 
 <!-- Footer -->
 <footer>
-    <div class="logos">
-        <a target="blank" href="https://www.facebook.com/gralbar"> <img src="./../resources/icon/facebook.png" alt="Logo Facebook"></a>
-        <a target="blank" href="https://www.instagram.com/gralbar/"> <img src="./../resources/icon/instagram.png" alt="Logo Instagram"></a>
+    <div class="socialNetwork">
+        <a href="https://www.facebook.com/gralbar"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/gralbar/"><i class="bi bi-instagram"></i></a>
     </div>
-    <a id="pedidosya" target="blank" href="https://www.pedidosya.com.ar/"><img src="./../resources/icon/pedidosya.svg" alt="Logo PedidosYa"> </a>
+  
+  
+    <div class="logos">
+        <a id="pedidosya" target="blank" href="https://www.pedidosya.com.ar/"><img src="./../resources/icon/pedidosya.svg" alt="Logo PedidosYa"> </a>
+    </div>
+    
     <p> Lima 917 - Bº General Paz - 351 726-2044</p>
 </footer>
 
