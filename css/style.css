@@ -4,16 +4,18 @@
   box-sizing: border-box;
   font-family: "Fredericka the Great", cursive, sans-serif;
 }
+
 html {
   font-size: 62.5%;
   line-height: 1.5;
 }
 
-/*///////////////// MAIN /////////////////*/
+/*///////////////// HEADER /////////////////*/
 
 .headerNav {
   width: 100%;
-  max-height: 10vh;
+  min-height: 10vh;
+  background-color: black;
 }
 .headerNav ul {
   display: flex;
@@ -29,7 +31,7 @@ html {
 }
 .headerNav img {
   height: 50px;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 .headerNav a:hover {
   filter: brightness(1.5);
@@ -38,40 +40,52 @@ html {
   font-size: 4rem;
   color: red;
 }
-.hero {
-  background-image: url(./../resources/img/tablas.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+
+/*///////////////// MAIN /////////////////*/
+.contenedor-main {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: rgb(40, 42, 44);
+  height: 100vh;
 }
-.heroTitulo {
+.slide {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.slide img {
+  max-height: 600px;
+  background-position: center;
+  background-size: cover;
+  margin: 1rem;
+}
+
+.carousel-inner h2 {
   font-size: 6rem;
-  background: rgba(40, 42, 44, 0.5);
-  -webkit-text-fill-color: antiquewhite;
-  padding: 4rem;
-  border-radius: 15px;
 }
-.heroTitulo:hover {
-  transform: scale(1.03);
-  background: rgba(40, 42, 44, 0.8);
+#banner_h2 {
+  background-color: rgba(40, 42, 44, 0.9);
+  margin-bottom: 10%;
+}
+.carousel-caption {
+}
+#carouselExampleControls {
+  background-color: rgb(40, 42, 44);
+  margin: 0px 50px;
+  padding-right: 10px;
 }
 
 /* ///////////////// MENU /////////////////*/
 
-section {
+.menu {
   width: 100%;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #efefef;
-  background-color: black;
+  background-color: rgb(40, 42, 44);
   /* background-color: rgba(40, 42, 44); */
 }
-.container {
+.contenedor-menu {
   width: 1100px;
   max-width: 100%;
   margin: 0 auto;
@@ -128,8 +142,8 @@ section {
 
 .gridContenedor_latienda {
   display: grid;
-  background-color: black;
-  /* background-color: rgb(40, 42, 44); */
+  /* background-color: black; */
+  background-color: rgb(40, 42, 44);
   grid-template-areas:
     "picada picada deli"
     "picada picada deli"
@@ -263,7 +277,43 @@ section {
 
 /* ///////////////// CONTACTO /////////////////*/
 
-.contacto {
+.contenedor-contacto {
+  height: 100vh;
+  background: #212529;
+
+  border-color: #545454;
+}
+.container {
+  padding-top: 10rem;
+}
+form .container {
+  width: 35%;
+}
+.form-label {
+  color: antiquewhite;
+}
+
+.titulo_contacto {
+  text-align: center;
+  color: antiquewhite;
+  margin-bottom: 2rem;
+}
+.container button {
+  padding: 1rem 2rem;
+}
+/* .form-control {
+  background: #212529;
+  border-color: #545454;
+} */
+.form-control:focus {
+  background: #212529;
+}
+
+.titulo-contacto h2 {
+  justify-content: center;
+  color: white;
+}
+/* .contacto {
   background-image: url(./../resources/img/tragos2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -315,7 +365,7 @@ textarea {
 #boton_submit:hover {
   background-color: rgb(40, 42, 44);
   color: antiquewhite;
-}
+} */
 
 /* ///////////////// FOOTER /////////////////*/
 footer {
@@ -343,207 +393,4 @@ footer p {
   padding: 5px;
   margin: 5px;
   display: flex;
-}
-
-@media (min-width: 601px) and (max-width: 850px) {
-  /* MAIN */
-  .headerNav ul li a {
-    font-size: 2rem;
-    color: antiquewhite;
-    margin: 50px 0px;
-  }
-  .hero {
-    background-image: url(./../resources/img/barra.jpg);
-    height: 10vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .heroTitulo {
-    font-size: 6rem;
-    background: rgba(40, 42, 44, 0.5);
-    -webkit-text-fill-color: antiquewhite;
-    padding: 1.5rem;
-  }
-  footer {
-    display: flex;
-  }
-  footer p {
-    color: antiquewhite;
-    font-size: 1rem;
-    margin-right: 20px;
-  }
-  #pedidosya {
-    width: 30px;
-    height: 30px;
-    padding: 2px;
-    margin: 2px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-  }
-  /* CONTACTO */
-  .contacto h2 {
-    color: antiquewhite;
-    text-align: center;
-    font-size: 2rem;
-    margin: 10px 0px;
-    padding: 10px;
-  }
-  form {
-    width: 300px;
-    background: rgba(0, 0, 0, 0.4);
-    padding: 20px 10px;
-    border-radius: 15px;
-  }
-  textarea {
-    min-height: 150px;
-    max-height: 250px;
-    max-width: 100%;
-    min-width: 100%;
-  }
-}
-
-@media (max-width: 600px) {
-  .headerNav ul {
-    flex-direction: column;
-    background-color: black;
-    align-items: center;
-  }
-  .headerNav ul li {
-    margin: 10px 0px;
-  }
-  .headerNav ul li a {
-    font-size: 2rem;
-    color: antiquewhite;
-    margin: 50px 0px;
-  }
-  .heroTitulo {
-    display: none;
-  }
-  .hero {
-    background-image: url(./../resources/img/frente-bar.jpg);
-    background-size: cover;
-    /* background-attachment: fixed; */
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .socialNetwork a {
-    justify-content: center;
-    margin: 0px 10px;
-  }
-  footer i {
-    font-size: 2rem;
-    color: antiquewhite;
-  }
-  footer p {
-    color: antiquewhite;
-    font-size: 1rem;
-    margin-right: 20px;
-  }
-  #pedidosya {
-    width: 20px;
-    height: 20px;
-    padding: 2px;
-    margin: 2px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-  }
-  /* CONTACTO */
-  .contacto h2 {
-    color: antiquewhite;
-    text-align: center;
-    font-size: 2rem;
-    margin: 10px 0px;
-    padding: 10px;
-  }
-  form {
-    width: 300px;
-    background: rgba(0, 0, 0, 0.4);
-    padding: 20px 10px;
-    border-radius: 15px;
-  }
-  textarea {
-    min-height: 150px;
-    max-height: 250px;
-    max-width: 100%;
-    min-width: 100%;
-  }
-}
-@media (max-width: 400px) {
-  .headerNav ul {
-    flex-direction: column;
-    background-color: black;
-    align-items: center;
-  }
-  .headerNav ul li {
-    margin: 5px 0px;
-  }
-  .headerNav ul li a {
-    font-size: 1rem;
-    color: antiquewhite;
-    margin: 50px 0px;
-  }
-  .headerNav img {
-    height: 30px;
-  }
-  .heroTitulo {
-    display: none;
-  }
-  .hero {
-    background-image: url(./../resources/img/frente-bar.jpg);
-    height: 10vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .socialNetwork a {
-    justify-content: center;
-    margin: 0px 10px;
-  }
-  footer {
-    display: flex;
-    flex-direction: column;
-  }
-  footer i {
-    font-size: 2rem;
-    color: antiquewhite;
-  }
-  footer p {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    color: antiquewhite;
-    font-size: 1rem;
-    margin-right: 20px;
-  }
-  #pedidosya {
-    display: none;
-  }
-  /* CONTACTO */
-  .contacto h2 {
-    color: antiquewhite;
-    text-align: center;
-    font-size: 1.5rem;
-    margin: 10px 0px;
-    padding: 10px;
-  }
-  form {
-    width: 200px;
-    background: rgba(0, 0, 0, 0.4);
-    padding: 20px 10px;
-    border-radius: 15px;
-  }
-  textarea {
-    min-height: 100px;
-    max-height: 150px;
-    max-width: 100%;
-    min-width: 100%;
-  }
-  #boton_submit {
-    padding: 10px;
-    color: black;
-    cursor: pointer;
-    border: none;
-  }
 }

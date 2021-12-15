@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"> 
     <title>General Bar & Beer</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
     <header>
@@ -25,16 +26,33 @@
     </header>
 
     <main>
-        <div class="contacto">
-            <div class="contacto_bg_img"></div>
-            <form action="">
-                <h2>Dejanos tu mensaje!</h2>
-                <input type="text" name="nombre" value=""  placeholder="Nombre">
-                <input type="email" name="email" name="e-mail" id="" placeholder="E-mail">
-                <textarea name="comentarios" placeholder="Dejanos tus comentarios"></textarea>
-                <input  type="submit" value="Enviar" id="boton_submit">
-            </form>
+        <!-- FORM -->
+    <form>
+        <div class="contenedor-contacto">
+            <div class="container">
+                <h2 class="titulo_contacto pt-4 fs-1">Dejanos tu mensaje</h2>
+                    <div class="form-outline mb-4 fs-3">
+                        <label class="form-label" for="form4Example1">Nombre</label>
+                        <input type="text" id="form4Example1" class="form-control" />
+                    </div>
+
+                    <div class="form-outline mb-4 fs-3">
+                        <label class="form-label" for="form4Example2">Email</label>
+                        <input type="email" id="form4Example2" class="form-control" />
+                    </div>
+
+                    <div class="form-outline mb-4 fs-3">
+                        <label class="form-label" for="form4Example3">Mensaje</label>
+                        <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                    </div>
+            <button type="submit" class="btn btn-primary btn-block mb-5">Enviar</button>
             </div>
+        </div>
+    </form>
+
+<!-- END FORM -->
+
+
     </main>
 
 
@@ -49,5 +67,8 @@
         
         <p> Lima 917 - Bº General Paz - 351 726-2044</p>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
