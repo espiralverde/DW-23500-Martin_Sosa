@@ -329,7 +329,7 @@ a {
 }
 
 .contenedor-galeria .columnas img {
-  margin-top: 10px;
+  margin: 5px 0px;
 }
 
 .contenedor-galeria .columnas p {
@@ -440,7 +440,8 @@ footer {
   text-align: center;
 }
 
-footer .socialnetwork {
+footer #socialnetwork {
+  margin: 0rem 1rem;
   font-size: 3rem;
 }
 /*# sourceMappingURL=style.css.map */

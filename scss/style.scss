@@ -21,8 +21,8 @@ $mainBgColor: black;
 }
 /* EXTEND*/
 %display-flex {
+  // flex direction=row
   display: flex;
-  // flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
@@ -46,7 +46,6 @@ $font-sizes: (
     color: $mainFontColor;
   }
 }
-
 /* GLOBAL */
 * {
   margin: 0px;
@@ -65,32 +64,6 @@ body {
   flex-direction: column;
   min-height: 100%;
 }
-// h1 {
-//   font-size: 5.6rem;
-//   color: $mainFontColor;
-// }
-// li,
-// button,
-// label,
-// input,
-// p {
-//   font-size: 2rem;
-//   color: $mainFontColor;
-// }
-// h2 {
-//   font-size: 4.8rem;
-//   color: $mainFontColor;
-// }
-// h3 {
-//   font-size: 3rem;
-//   font-weight: normal;
-//   color: $mainFontColor;
-// }
-// h4,
-// h5 {
-//   font-size: 2.8rem;
-//   color: $mainFontColor;
-// }
 a {
   color: antiquewhite !important;
   text-decoration: none;
@@ -135,9 +108,7 @@ a {
       position: absolute;
       .carousel__titulo {
         @extend %display-flex;
-        flex-direction: column;
-        // display: flex;
-        // justify-content: center;
+        flex-direction: column; // extend moficado
         position: relative;
         top: 35%;
         margin: 1rem 10rem;
@@ -168,17 +139,12 @@ a {
 }
 .cardLaTienda__contenedor {
   @extend %display-flex;
-  // flex-direction: row;
-  // display: flex;
-  // justify-content: center;
-  // flex-wrap: wrap;
   margin-top: 2rem;
   .cardLaTienda__card {
     @include border-radius();
     margin: 1rem;
     height: 50rem;
     width: 30rem;
-    // color: $mainFontColor;
     background-color: #343c44;
     &:hover {
       @include card-hover;
@@ -216,25 +182,17 @@ a {
 .menu {
   width: 100%;
   @extend %display-flex;
-  // display: flex;
-  // justify-content: center;
-  // align-content: center;
   background-color: $mainBgColor;
   .contenedor-menu {
     max-width: 90%;
     margin: 2rem 4rem;
     .row-menu {
-      // display: flex;
-      // flex-wrap: wrap;
       align-items: center;
       justify-content: center;
       .card-menu {
         @include border-radius();
         @extend %display-flex;
         flex-direction: column;
-        // display: flex;
-        // align-items: center;
-        // align-self: normal;
         background: #343c44;
         margin: 2rem 4rem;
         padding: 10px 20px;
@@ -247,13 +205,11 @@ a {
         }
         & h4 {
           font-size: 2rem;
-          // color: $mainFontColor;
           text-transform: uppercase;
           margin: 10px 0;
         }
         & p {
           font-family: sans-serif;
-          // color: $mainFontColor;
           font-size: 1.5rem;
           margin-bottom: 10px;
           text-align: center;
@@ -269,8 +225,6 @@ a {
 /* GALERIA */
 .contenedor-galeria {
   @extend %display-flex;
-  // display: flex;
-  // flex-wrap: wrap;
   padding: 5px;
   background-image: linear-gradient(45deg, red, blue);
   & img {
@@ -280,11 +234,10 @@ a {
     flex: 25%;
     padding: 5px;
     & img {
-      margin-top: 10px;
+      margin: 5px 0px;
     }
     & p {
       padding: 5rem 0rem;
-      // color: $mainFontColor;
       text-align: center;
       &:hover {
         @include border-radius();
@@ -298,15 +251,12 @@ a {
     }
   }
 }
-
 /* CONTACTO */
-
 .contenedor-form {
   .marco-contacto {
     border: 5px #343c44 solid;
     width: 75% !important;
     .titulo-contacto {
-      // color: $mainFontColor;
       text-align: center;
       padding-bottom: 2rem;
     }
@@ -320,17 +270,14 @@ a {
       }
     }
     .form-label {
-      // color: $mainFontColor;
     }
   }
 }
-
 /* MENU */
 .contenedor__menu {
   max-width: 100%;
   margin: 0 auto;
   padding: 1rem;
-  // color: $mainFontColor;
   .menu__grupo__tituloPrincipal {
     margin: 1rem 0rem;
     text-align: center;
@@ -360,8 +307,6 @@ a {
       flex-grow: 1;
       .menu__item__titulo {
         @extend %display-flex;
-        // display: flex;
-        // flex-wrap: wrap;
         justify-content: space-between;
       }
       .menu__item__nombre {
@@ -375,7 +320,8 @@ footer {
   margin-top: auto;
   background-color: #343c44;
   text-align: center;
-  .socialnetwork {
+  #socialnetwork {
+    margin: 0rem 1rem;
     font-size: 3rem;
   }
 }
