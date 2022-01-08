@@ -1,7 +1,7 @@
 {
   "name": "dw-23500-martin_sosa",
   "version": "1.0.0",
-  "description": "",
+  "description": "Proyecto General Bar&Beer para curso de Desarrollo Web",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
